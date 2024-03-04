@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,8 +16,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="">
+      <body className={inter.className + " bg-slate-200"}>
+        <div className="w-full bg-slate-900 text-white gap-5 flex p-3 font-gothic">
+          <Link className="" href="/">
+            메인
+          </Link>
+          <Link href="/list">상품목록</Link>
+          <Link href="/cart">장바구니</Link>
+          <Link href="/board">게시판</Link>
+        </div>
+        <div className="mt-10 justify-center flex h-screen max-h-[600px]">
+          <div className=" bg-slate-50 w-4/5 rounded-lg shadow-lg p-4 font-gothic">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
