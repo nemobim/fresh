@@ -36,7 +36,7 @@ const page = () => {
   ];
   return (
     <div>
-      <Title title="List" color="text-sky-500" />
+      <Title title="상품 목록" color="text-lime-500" />
       <div>
         {martList.map((item) => (
           <div key={item.order} className="flex justify-between items-center p-3 border-b">

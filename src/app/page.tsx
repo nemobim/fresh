@@ -5,7 +5,7 @@ import Image from "next/image";
 const page = async () => {
   return (
     <div>
-      <Title title="Fresh" color="text-green-500" />
+      <Title title="Fresh mart" color="text-green-500" />
       <div className="flex justify-center">
         <Image src={Cart} alt="fresh" width={500} height={500} />
       </div>

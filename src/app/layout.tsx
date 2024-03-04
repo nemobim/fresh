@@ -26,7 +26,7 @@ export default function RootLayout({
           <Link href="/cart">장바구니</Link>
           <Link href="/board">게시판</Link>
         </div>
-        <div className="mt-10 justify-center flex h-screen max-h-[600px]">
+        <div className="mt-10 justify-center flex h-screen max-h-[600px] min-w-[1000px]">
           <div className=" bg-slate-50 w-4/5 rounded-lg shadow-lg p-4 font-gothic">{children}</div>
         </div>
       </body>
