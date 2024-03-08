@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import Link from "next/link";
 
 const page = async ({
@@ -20,7 +21,7 @@ const page = async ({
       return;
     }
 
-    console.log("title", title, content);
+    axios.put(`/api/editBoard`, { title, content, boardId }).then((res) => {});
   };
 
   return (
